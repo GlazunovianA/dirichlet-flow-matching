@@ -9,11 +9,13 @@ torch.manual_seed(0)
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 
+# wandb.init(project="flow-matching")
 if args.wandb:
     wandb.init(
-        entity="anonymized",
+        # entity="anonymized",
         settings=wandb.Settings(start_method="fork"),
-        project="betawolf",
+        # project="betawolf",
+        project="flow-matching",
         name=args.run_name,
         config=args,
     )

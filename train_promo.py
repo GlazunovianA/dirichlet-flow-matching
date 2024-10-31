@@ -8,6 +8,7 @@ import torch, os, wandb
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 
+# log in with wandb before starting
 # wandb.init(project="flow-matching")
 if args.wandb:
     wandb.init(
